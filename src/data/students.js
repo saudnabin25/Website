@@ -1,3 +1,5 @@
+import { assetPath } from "../utils/assetPath.js";
+
 const students = [
   {
     id: 1,
@@ -5,7 +7,7 @@ const students = [
     focus: "Engineering",
     description:
       "Aasish BK aspires to be an engineer and completed Grade 6 at Shree Bhanodaya Basic School with a 3.45 GPA last year. We hope to see him become an engineer and build cool things.",
-    photo: "/Pictures/Students/Aashish.jpg",
+    photo: assetPath("/Pictures/Students/Aashish.jpg"),
     grade: "Grade 6",
     location: "Doti, Nepal",
   },
@@ -25,7 +27,7 @@ const students = [
     focus: "Engineering",
     description:
       "Ashok is a returning TFE scholarship recipient who secured a 3.82 GPA on his SEE exam. Along with stellar academics, he won district-level badminton and chess tournaments, stays endlessly curious, and was named student of the year.",
-    photo: "/Pictures/Students/ashok.png",
+    photo: assetPath("/Pictures/Students/ashok.png"),
     grade: "Grade 10",
     location: "Kanchanpur, Nepal",
   },
@@ -35,7 +37,7 @@ const students = [
     focus: "Science",
     description:
       "Asmita loves experiments and dreams of leading her own lab to research renewable energy solutions for remote communities.",
-    photo: "/Pictures/Students/Asmita.jpg",
+    photo: assetPath("/Pictures/Students/Asmita.jpg"),
     grade: "Grade 8",
     location: "Bajhang, Nepal",
   },
@@ -65,7 +67,7 @@ const students = [
     focus: "Arts",
     description:
       "Diyan Ghala completed Grade 6 at Shree Bhanodaya Basic School with a 3.14 GPA last year. He is an aspiring rapper, and we will be tracking his artistic career closely.",
-    photo: "/Pictures/Students/Diyan.jpg",
+    photo: assetPath("/Pictures/Students/Diyan.jpg"),
     grade: "Grade 6",
     location: "Dadeldhura, Nepal",
   },
@@ -85,7 +87,7 @@ const students = [
     focus: "Law & Finance",
     description:
       "Pratigya Thapa wants to pursue law while exploring the world of finance. She completed Grade 7 at Shree Bhanodaya Basic School with a 3.45 GPA and loves blending both interests.",
-    photo: "/Pictures/Students/Pratigya.jpg",
+    photo: assetPath("/Pictures/Students/Pratigya.jpg"),
     grade: "Grade 7",
     location: "Banke, Nepal",
   },
@@ -105,7 +107,7 @@ const students = [
     focus: "Entrepreneurship",
     description:
       "Rabi Gahatraj has a keen business mindset and aspires to become a successful entrepreneur in Nepal. He completed Grade 7 at Shree Bhanodaya Basic School with a 3.29 GPA.",
-    photo: "/Pictures/Students/Rabi.jpg",
+    photo: assetPath("/Pictures/Students/Rabi.jpg"),
     grade: "Grade 7",
     location: "Dang, Nepal",
   },
@@ -125,7 +127,7 @@ const students = [
     focus: "Athletics",
     description:
       "Rojit completed Grade 6 at Shree New Saraswati School in Kanchanpur. He comes from an economically fragile background, keeps working to improve his studies, and you have to work hard to draw him into conversation.",
-    photo: "/Pictures/Students/Rojit.jpg",
+    photo: assetPath("/Pictures/Students/Rojit.jpg"),
     grade: "Grade 6",
     location: "Kanchanpur, Nepal",
   },
@@ -135,7 +137,7 @@ const students = [
     focus: "Technology",
     description:
       "Sarthak builds robots out of scrap electronics and mentors younger students on coding basics after school hours.",
-    photo: "/Pictures/Students/Sarthak.jpg",
+    photo: assetPath("/Pictures/Students/Sarthak.jpg"),
     grade: "Grade 9",
     location: "Bajhang, Nepal",
   },

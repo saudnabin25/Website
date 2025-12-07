@@ -1,3 +1,5 @@
+import { assetPath } from "../utils/assetPath.js";
+
 const posts = [
   {
     id: 1,
@@ -8,15 +10,15 @@ const posts = [
     category: "Education Reform",
     categoryColor: "#1F2544",
     author: "Aasutosh Bhatt",
-    image: "/Pictures/blog1.jpg",
+    image: assetPath("/Pictures/blog1.jpg"),
     disableFeaturedImage: true,
     content: [
-      { type: "image", src: "/Pictures/japan.jpg", alt: "Japan during the opening of the Black Ships", caption: "Figure 1: Gunboats in the Tokyo Harbor" },
+      { type: "image", src: assetPath("/Pictures/japan.jpg"), alt: "Japan during the opening of the Black Ships", caption: "Figure 1: Gunboats in the Tokyo Harbor" },
       "In 1853, 220 years of isolation policy of Tokugawa Shogunate trembled to the core, and Japan was forced to open its country. An incident remembered in Japanese History as the ‘Arrival of the Black Ships’. The nation was threatened with signing humiliating treaties by the gunboats of Commodore Perry docked in Tokyo Harbor.",
       "Almost 50 years ago, in 1816 Nepal signed an even more humiliating treaty with the East India Company to put an end to the Anglo-Nepal War. The treaty involved Nepal giving up almost 2/3 of her land and permanent presence of a British resident in Kathmandu.",
       {
         type: "image",
-        src: "/Pictures/blog1.jpg",
+        src: assetPath("/Pictures/blog1.jpg"),
         alt: "Historic scene illustrating Nepal's treaty era",
         caption: "Figure 2: Signing of Sugauli Treaty in 1816 A.D"
       },
@@ -33,7 +35,7 @@ const posts = [
     excerpt: "A comparative look at the reforms, investments, and community movements that brought classrooms into the twentieth century.",
     category: "Comparative Studies",
     categoryColor: "#E35D4A",
-    image: "/Pictures/blog2.jpg",
+    image: assetPath("/Pictures/blog2.jpg"),
     author: "Aasutosh Bhatt",
     content: [
       "First Steps",
@@ -74,7 +76,7 @@ const posts = [
     excerpt: "How apprenticeship models and community-led learning continue to shape opportunity beyond the traditional school system.",
     category: "Alternative Learning",
     categoryColor: "#36A269",
-    image: "/Pictures/blog3.png",
+    image: assetPath("/Pictures/blog3.png"),
     author: "Aasutosh Bhatt",
     content: [
       "Restricted Understanding of Education In Our Subconscious",
@@ -89,7 +91,7 @@ const posts = [
       "We are going to delve into one of the projects that CTEVT completed with the help of European Union:",
       {
         type: "image",
-        src: "/Pictures/ctevt.png",
+        src: assetPath("/Pictures/ctevt.png"),
         alt: "CTEVT project supported by the EU",
         caption: "Fig1.1: Students in Electrical Training, CTEVT Balaju (Source: CTEVT)"
       },

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { DONATION_URL } from "../constants/links.js";
+import { assetPath } from "../utils/assetPath.js";
 
 const links = [
   { label: "About Us", to: "/about" },
@@ -60,7 +61,7 @@ export default function Navbar(){
       <div className="px-5 md:px-10 py-3 flex items-center gap-6">
         <Link to="/" className="flex items-center gap-3 flex-shrink-0">
           <img
-            src="/Pictures/logo.png"
+            src={assetPath("/Pictures/logo.png")}
             alt="Trinket For Education logo"
             className={`w-auto ${
               onHero

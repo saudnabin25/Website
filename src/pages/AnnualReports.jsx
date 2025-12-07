@@ -1,5 +1,6 @@
 import React from "react";
 import annualReports from "../data/annualReports.js";
+import { assetPath } from "../utils/assetPath.js";
 
 export default function AnnualReports(){
   const [activeReport, setActiveReport] = React.useState(annualReports[0]?.id ?? null);
@@ -47,7 +48,7 @@ export default function AnnualReports(){
               <article key={report.id} className="card bg-white p-6 flex flex-col gap-4">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                   <div className="flex items-start gap-4">
-                    <img src="/Pictures/logo.png" alt="TFE logo" className="w-16 h-16 object-contain" />
+                    <img src={assetPath("/Pictures/logo.png")} alt="TFE logo" className="w-16 h-16 object-contain" />
                     <div>
                       <h2 className="text-lg font-bold text-gray-900">{report.title}</h2>
                       <p className="text-sm text-gray-600 mt-1">{report.description}</p>

@@ -6,6 +6,7 @@ import TeamSection from "../components/TeamSection.jsx";
 import BlogSection from "../components/BlogSection.jsx";
 import PartnersSection from "../components/PartnersSection.jsx";
 import { DONATION_URL } from "../constants/links.js";
+import { assetPath } from "../utils/assetPath.js";
 
 export default function Home(){
   const location = useLocation();
@@ -25,7 +26,7 @@ export default function Home(){
   return (
     <>
       <section className="relative min-h-screen flex items-center justify-center text-white bg-brand">
-        <img src="/Pictures/landing.jpeg" alt="Trinket For Education" className="absolute inset-0 w-full h-full object-cover object-top" />
+        <img src={assetPath("/Pictures/landing.jpeg")} alt="Trinket For Education" className="absolute inset-0 w-full h-full object-cover object-top" />
         <div className="absolute inset-0 bg-brand/70"></div>
         <div className="relative z-10 text-center px-4 mt-[-17vh]">
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">A Trinket For Education</h1>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { assetPath } from "../utils/assetPath.js";
 
 const socials = [
   { label: "Facebook", symbol: "f", href: "https://www.facebook.com/profile.php?id=61572664831960" },
@@ -103,7 +104,7 @@ export default function Footer(){
                 </a>
               ))}
             </div>
-            <img src="/Pictures/logo.png" alt="Trinket For Education logo" className="h-16 w-auto mt-6" />
+            <img src={assetPath("/Pictures/logo.png")} alt="Trinket For Education logo" className="h-16 w-auto mt-6" />
             <p className="mt-4 text-sm text-gray-600 max-w-xs">
               An individual thought or deed is all it takes to set everything in motion.
             </p>

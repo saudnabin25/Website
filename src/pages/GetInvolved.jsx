@@ -1,4 +1,5 @@
 import React from "react";
+import { assetPath } from "../utils/assetPath.js";
 
 const contactMethods = [
   {
@@ -68,7 +69,7 @@ export default function GetInvolved(){
     <>
       <section className="relative isolate overflow-hidden bg-brand text-white py-24">
         <img
-          src="/Pictures/homepage.png"
+          src={assetPath("/Pictures/homepage.png")}
           alt="Volunteer leading a student workshop"
           className="absolute inset-0 h-full w-full object-cover opacity-40"
         />

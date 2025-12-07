@@ -1,5 +1,6 @@
 import React from "react";
 import scholarships from "../data/scholarships.js";
+import { assetPath } from "../utils/assetPath.js";
 
 export default function Scholarships(){
   return (
@@ -20,7 +21,7 @@ export default function Scholarships(){
             <article key={item.id} className="card bg-white py-5 pr-5 pl-10 flex flex-col gap-3">
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-start gap-4">
-                  <img src="/Pictures/logo.png" alt="TFE logo" className="w-14 h-14 object-contain" />
+                  <img src={assetPath("/Pictures/logo.png")} alt="TFE logo" className="w-14 h-14 object-contain" />
                   <h2 className="text-lg font-bold text-gray-900 leading-tight">{item.name}</h2>
                 </div>
                 <span className="text-xs font-semibold text-brand uppercase tracking-wide whitespace-nowrap">{item.amount}</span>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { assetPath } from "../utils/assetPath.js";
 
 export default function AboutSection({ showButton = true, paddingY = "py-20" }){
   return (
@@ -7,7 +8,7 @@ export default function AboutSection({ showButton = true, paddingY = "py-20" }){
       <div className={`container-max ${paddingY} grid lg:grid-cols-[1fr,1fr] gap-12 items-center`}>
         <div className="flex justify-center">
           <img
-            src="/Pictures/fulllogo.png"
+            src={assetPath("/Pictures/fulllogo.png")}
             alt="Trinket For Education logo"
             className="max-w-md w-full"
           />

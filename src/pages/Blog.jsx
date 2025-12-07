@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import posts from "../data/posts.js";
+import { assetPath } from "../utils/assetPath.js";
 
 const authorImages = {
-  "Aasutosh Bhatt": "/Pictures/Aasutosh.JPG"
+  "Aasutosh Bhatt": assetPath("/Pictures/Aasutosh.JPG")
 };
 
 export default function Blog(){

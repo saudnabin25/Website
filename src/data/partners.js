@@ -1,23 +1,25 @@
+import { assetPath } from "../utils/assetPath.js";
+
 const partners = [
   {
     name: "Saud Foundation",
-    logo: "/Pictures/saud.png"
+    logo: assetPath("/Pictures/saud.png")
   },
   {
     name: "Bogati Family",
-    logo: "/Pictures/bogati.png"
+    logo: assetPath("/Pictures/bogati.png")
   },
   {
     name: "Koirala Group",
-    logo: "/Pictures/koirala.png"
+    logo: assetPath("/Pictures/koirala.png")
   },
   {
     name: "Elite 3 Construction",
-    logo: "/Pictures/elite3.png"
+    logo: assetPath("/Pictures/elite3.png")
   },
   {
     name: "Kymanox",
-    logo: "/Pictures/kymanox.png"
+    logo: assetPath("/Pictures/kymanox.png")
   }
 ];
 
